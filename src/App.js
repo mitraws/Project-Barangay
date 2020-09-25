@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+// import "./App.css";
 import Rooms from "./Pages/Rooms/index";
 
 function App() {
