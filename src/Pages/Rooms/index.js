@@ -1,57 +1,72 @@
 import React from "react";
+import "./index.css";
 
 export default function index() {
   return (
-    <div>
-      <h1>THE “TROPICAL” ROOMS</h1>
+    <div className='main'>
       <div>
-        <img
-          src='http://barangay.nl/images/thumbnail%20(4).jpg?crc=390300741'
-          alt='bedroom'
-        />
-        <img
-          src='http://barangay.nl/images/thumbnail%20(1).jpg?crc=238654893'
-          alt='bathroom'
-        />
-
-        <img
-          src='http://barangay.nl/images/thumbnail%20(9).jpg?crc=123493431'
-          alt='bedroom'
-        />
-        <img
-          src='http://barangay.nl/images/thumbnail%20(7).jpg?crc=3937410535'
-          alt='bathroom'
-        />
-        <img
-          src='http://barangay.nl/images/img_6864.jpg?crc=90861977'
-          alt='tabel and desk'
-        />
-        <img
-          src='http://barangay.nl/images/img_6852.jpg?crc=390424378'
-          alt='TV'
-        />
-        <img
-          src='http://barangay.nl/images/img_6859.jpg?crc=60136289'
-          alt='fridge'
-        />
-      </div>
-      <div>
-        <button>Show Availability </button>
-      </div>
-      <div>
+        <h1>THE “TROPICAL” ROOMS</h1>
         <p>
           Our non smoking double or twin rooms are decorated in a quirky,
           tropical, S/E Asian style. Both rooms have large en-suite bathrooms
           with showers and bathtubs. Unique among B&B's, we have Japanese bidet
           toilets for complete hygiene. Rooms are on the first and second floor.
-          Like monumental houses in Amsterdam,{" "}
-          <b>
-            we have steep narrow stairs, the B&B is not suitable to those
-            physicaly challenged
-          </b>
-          .
+          Like monumental houses in Amsterdam, we have steep narrow stairs, the
+          B&B is not suitable to those physicaly challenged. We serve our “world
+          famous breakfast” in the rooms between 09.00 and 11.00 hours, If you
+          prefer an early breakfast we serve a full continental breakfast the
+          night before. Especial breakfast options: Continental, Vegetarian,
+          Vegan , Gluten free. Don't forget to inform us when checking in.
         </p>
+        <div>
+          <button>Make Reservation </button>
+        </div>
       </div>
+      <div className='grid'>
+        <div>
+          <img
+            src='http://barangay.nl/images/img_6733.jpg?crc=3846406442'
+            alt='bedroom'
+            height='50%'
+            width='50%'
+          />
+        </div>
+
+        <div>
+          <img
+            src='http://barangay.nl/images/thumbnail%20(1).jpg?crc=238654893'
+            alt='bathroom'
+            // height='20%'
+            // width='20%'
+          />
+        </div>
+        <div>
+          <img
+            src='http://barangay.nl/images/thumbnail%20(7).jpg?crc=3937410535'
+            alt='tabel and desk'
+            // height='20%'
+            // width='20%'
+          />
+        </div>
+        <div>
+          <img
+            src='http://barangay.nl/images/thumbnail%20(9).jpg?crc=123493431'
+            alt='TV'
+            // height='10%'
+            // width='10%'
+          />
+        </div>
+
+        {/* <div>
+          <img
+            src='http://barangay.nl/images/img_6859.jpg?crc=60136289'
+            alt='fridge'
+            height='20%'
+            width='20%'
+          />
+        </div> */}
+      </div>
+
       <div>
         <h4>Amenites</h4>
         <ul>

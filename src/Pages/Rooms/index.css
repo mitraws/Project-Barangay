@@ -1,0 +1,48 @@
+.main {
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: center;
+}
+
+.side {
+    float: left;
+    margin: 10px;
+    width: 80%;
+    height: 80%;
+}
+
+.left {
+    float: right;
+    margin: 10px;
+    width: 50%;
+    height: 50%;
+}
+
+
+/* .image {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.image1 {
+    padding: 20px;
+}
+
+
+/* div {
+    background: linear-gradient(to right, transparent, #00f5cb, transparent);
+    /* width: 100%;
+    height: 64px;} */
+
+body {
+    background: linear-gradient( to left, #ffffff 50%, rgba(230, 237, 238, 0.377) 50%);
+}
