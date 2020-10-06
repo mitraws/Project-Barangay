@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Good_to_know() {
+export default function GoodToKnow() {
   return <div></div>;
 }
