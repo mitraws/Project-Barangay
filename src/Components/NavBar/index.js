@@ -1,9 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./index.css";
 
-export default function NavBar() {
+export default function index() {
   return (
-    <div>
+    <div className="navigation_bar">
       <NavLink to="/">Home</NavLink>
       {"   "}
       <NavLink to="/rooms">Rooms</NavLink>
