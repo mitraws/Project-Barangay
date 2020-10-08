@@ -11,13 +11,18 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <div className="App">
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/rooms" component={Rooms} />
-        <Route path="/about" component={AboutUs} />
-        <Route path="/goodtoknow" component={GoodToKnow} />
-        <Route path="/contact" component={Contact} />
-      </Switch>
+      <nav>
+        <NavBar />
+      </nav>
+      <header className="App-header">
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/rooms" component={Rooms} />
+          <Route path="/aboutus" component={AboutUs} />
+          <Route path="/goodtoknow" component={GoodToKnow} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+      </header>
     </div>
   );
 }
