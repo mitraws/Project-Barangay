@@ -2,18 +2,17 @@ import { Switch, Route } from "react-router-dom";
 import React from "react";
 import "./App.css";
 import NavBar from "./Components/NavBar";
-import Home from "./pages/Home";
-import Rooms from "./pages/Rooms";
-import AboutUs from "./pages/AboutUs";
-import GoodToKnow from "./pages/GoodToKnow";
-import Contact from "./pages/Contact";
+import Home from "./Pages/Home";
+import Rooms from "./Pages/Rooms";
+import AboutUs from "./Pages/AboutUs";
+import GoodToKnow from "./Pages/GoodToKnow";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
     <div className="App">
-      <nav>
-        <NavBar />
-      </nav>
+      <NavBar />
+
       <header className="App-header">
         <Switch>
           <Route exact path="/" component={Home} />

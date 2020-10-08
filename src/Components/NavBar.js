@@ -4,15 +4,15 @@ import { NavLink } from "react-router-dom";
 export default function NavBar() {
   return (
     <div>
-      <NavLink>Home</NavLink>
+      <NavLink to="/">Home</NavLink>
       {"   "}
-      <NavLink>Rooms</NavLink>
+      <NavLink to="/rooms">Rooms</NavLink>
       {"   "}
-      <NavLink>Good to know</NavLink>
+      <NavLink to="/goodtoknow">Good to know</NavLink>
       {"   "}
-      <NavLink>About Us</NavLink>
+      <NavLink to="/aboutus">About Us</NavLink>
       {"   "}
-      <NavLink>Contact</NavLink>
+      <NavLink to="/contact">Contact</NavLink>
     </div>
   );
 }
