@@ -1,10 +1,10 @@
 .navigation_bar > a {
-  line-height: 3;
+  line-height: 6;
   font-weight: normal;
   color: #2b3a44;
   text-decoration: none;
 
-  font-family: "Nunito Sans", sans-serif;
+  /* font-family: "Nunito Sans", sans-serif; */
 }
 
 .navigation_bar {
