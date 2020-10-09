@@ -2,11 +2,11 @@ import { Switch, Route } from "react-router-dom";
 import React from "react";
 import "./App.css";
 import NavBar from "./Components/NavBar/index.js";
-import Home from "./Pages/Home";
-import Rooms from "./Pages/Rooms";
-import AboutUs from "./Pages/AboutUs";
-import GoodToKnow from "./Pages/GoodToKnow";
-import Contact from "./Pages/Contact";
+import Home from "./Components/Pages/Home";
+import Rooms from "./Components/Pages/Rooms";
+import AboutUs from "./Components/Pages/AboutUs";
+import GoodToKnow from "./Components/Pages/GoodToKnow";
+import Contact from "./Components/Pages/Contact";
 
 function App() {
   return (
