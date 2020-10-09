@@ -17,8 +17,7 @@ function App() {
         <Route path="/goodtoknow" component={GoodToKnow} /> 
         <Route path="/contact" component={Contact} />  */}
       </Switch>
-    </div>
+   </div>
   );
 }
-
 export default App;
