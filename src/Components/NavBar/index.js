@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Button from "../Button/index.js";
 import "./index.css";
 
 export default function index() {
@@ -14,6 +15,8 @@ export default function index() {
       <NavLink to="/aboutus">About Us</NavLink>
       {"   "}
       <NavLink to="/contact">Contact</NavLink>
+
+      <Button />
     </div>
   );
 }
