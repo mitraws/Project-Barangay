@@ -1,14 +1,14 @@
 import React from "react";
 //import { motion } from "framer-motion";
 import "./index.css";
-//import "../../Styles/style.css";
+import "../../Style/style.css";
 
 export default function index() {
   return (
     <div className='main'>
       <div>
         <header>
-          <h1>THE “TROPICAL” ROOMS</h1>
+          <h1>The “Tropical” Rooms</h1>
           <p>
             There are two spacious double- (or twin) rooms, decorated in a
             quirky, tropical, S/E Asian style. Both Non smoking rooms have large
@@ -102,7 +102,7 @@ export default function index() {
       </div>
       <div className='grid2'>
         <div>
-          <h4>POLICIES</h4>
+          <h4>Policies</h4>
           <p>
             Our conditions and cancellation policy. (The applied amounts /
             percentages are to be paid by the guest.) If you cancel you
@@ -117,7 +117,7 @@ export default function index() {
           </p>
         </div>
         <div>
-          <h4>BREAKFAST IN BED</h4>
+          <h4>Breakfast in bed</h4>
           <p>
             We serve our “world famous breakfast” in the rooms between 09.00 and
             11.00 hours, If you prefer an early breakfast we serve a full
@@ -150,6 +150,7 @@ export default function index() {
           </div>
         </footer>
       </div> */}
+
     </div>
   );
 }
