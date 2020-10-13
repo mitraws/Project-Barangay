@@ -1,0 +1,41 @@
+.contact-right {
+  position: relative;
+  background-color: transparent;
+  color: #2b3a44;
+  padding: 5px 25px;
+  border: 1px solid #2b3a44;
+  -webkit-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.contact-right:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  /* background-color: black; */
+  -webkit-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.contact-right:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.contact-right:hover:before {
+  width: 100%;
+  color: #fff;
+}
+
+button {
+  font-size: 1.3125rem;
+  line-height: 2 rem;
+  font-family: "Antic Didone", "system-ui", "Segoe UI", "Roboto", "Helvetica",
+    "Arial", sans-serif;
+}
