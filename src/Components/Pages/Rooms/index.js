@@ -1,7 +1,7 @@
 import React from "react";
 //import { motion } from "framer-motion";
 import "./index.css";
-import "../../Style/style.css";
+import "../../../App.css";
 
 export default function index() {
   return (
