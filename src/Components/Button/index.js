@@ -4,7 +4,7 @@ import "./index.css";
 export default function index(props) {
   return (
     <div>
-      <button className='contact-right'>{props.name} </button>
+      <button className="contact-right">Book Now</button>
     </div>
   );
 }
