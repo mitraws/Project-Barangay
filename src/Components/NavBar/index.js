@@ -1,12 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Button from "../Button/index.js";
+import Logo from "../Logo/index.js";
 import "./index.css";
 
 export default function index() {
   return (
     <div className="navigation_bar">
-      <NavLink to="/">Home</NavLink>
+      {/* <Logo /> */}
+      <NavLink to="/">
+        <Logo />
+      </NavLink>
       {"   "}
       <NavLink to="/rooms">Rooms</NavLink>
       {"   "}

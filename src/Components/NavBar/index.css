@@ -1,5 +1,6 @@
 .navigation_bar > a {
-  line-height: 4;
+  /* line-height: 5; */
+  padding-top: 5px;
   font-weight: normal;
   color: #2b3a44;
   text-decoration: none;
@@ -8,18 +9,8 @@
 }
 
 .navigation_bar {
+  padding-top: 25px;
+  line-height: 4;
   display: flex;
   justify-content: space-evenly;
-}
-.before {
-  width: 6px;
-  height: 6px;
-  position: absolute;
-  right: 0;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background: #e7e3e3;
-  display: block !important;
-  content: "";
-  top: 0.5em;
 }
