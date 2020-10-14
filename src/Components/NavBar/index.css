@@ -1,0 +1,16 @@
+.navigation_bar > a {
+  /* line-height: 5; */
+  padding-top: 5px;
+  font-weight: normal;
+  color: #2b3a44;
+  text-decoration: none;
+
+  /* font-family: "Nunito Sans", sans-serif; */
+}
+
+.navigation_bar {
+  padding-top: 25px;
+  line-height: 4;
+  display: flex;
+  justify-content: space-evenly;
+}
