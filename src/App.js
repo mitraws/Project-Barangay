@@ -11,7 +11,6 @@ import Contact from "./Components/Pages/Contact";
 function App() {
   return (
     <div className="App">
-
       <NavBar />
 
       <header className="App-header">
