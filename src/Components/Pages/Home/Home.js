@@ -187,9 +187,33 @@ export default function HomePage() {
       </div>
        
       </div>
-      {/* {Slideshow()} */}
-      
-      
+      <div className="awards">
+<div>
+  
+  <b className="review">Shan Courtat ⭐⭐⭐⭐⭐</b>
+  <p> Stayed for 3 nights and it was one of the best trip I've ever had thanks to our hosts, 
+  were very warm but also professional at the same time. Made us feel super comfortable, rooms have beautiful furniture and decorations. 
+  Breakfasts are tasty, varied and always served on time. The place and neighborhood are overall really cozy, close to train station 
+  (max. 15min) and the center ; also very close to the tram so you can visit other places like the Museumplein very easily.
+  </p>
+</div>
+<div>
+ 
+<b className="review">Thiago Nouer ⭐⭐⭐⭐⭐</b>
+<p>I actually stayed here a year ago and forgot to write a review when I left and generally I don’t write reviews at all, but I remember this place exactly, professional host with the best guiding tips, made us feel very welcome and cooks the most delicious well served breakfast , hands down this BnB will offer the best hospitality you can imagine, the rooms are all beautifully theme designed with privet bathrooms, lovely kitchen with sitting area and background music. 
+I would definitely recommend staying here just for the experience
+</p>
+</div>
+<div>
+  
+    <b className="review">Gian Domenico Aresu ⭐⭐⭐⭐⭐</b>
+    <p> B&B delizioso, curato nei minimi particolari e molto pulito. Ottima posizione e gestori molto gentili e accoglienti. 
+    Colazione in camera molto ricca e di qualità. Ci tornerò sicuramente e lo consiglio a tuti coloro che sanno esattamente che cosa sia un B&B.
+Grazie di tutto
+Gianpaolo e Domenico
+  </p>
+</div>
+</div>
 
     </div>
   );
