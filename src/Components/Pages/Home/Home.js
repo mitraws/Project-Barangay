@@ -1,5 +1,10 @@
 import React from "react";
 import "./HomePage.css";
+import "../../../App.css";
+import "react-slideshow-image/dist/styles.css";
+import { Slide } from "react-slideshow-image";
+
+
 import mainImage from "../../../Images/IMG_0318.jpg";
 import batchImage from "../../../Images/batchexcellent2.jpg";
 import awardImage from "../../../Images/hotelCombined2.jpg";
@@ -21,11 +26,10 @@ import slide14 from "../../../Images/IMG_0404.jpg";
 import slide15 from "../../../Images/IMG_0405.jpg";
 import slide16 from "../../../Images/IMG_1205.jpg";
 import slide17 from "../../../Images/IMG_1810.jpg";
-import slide18 from "../../../Images/IMG_6556.jpg";
+//import slide18 from "../../../Images/IMG_6556.jpg";
 import slide19 from "../../../Images/IMG_9333.jpg";
 import slide20 from "../../../Images/IMG_9674.jpg";
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
+
 
 const slideImages = [
   slide1,
@@ -45,13 +49,16 @@ const slideImages = [
   slide15,
   slide16,
   slide17,
-  slide18,
+  //slide18,
   slide19,
   slide20,
 ];
 
+
+
 const Slideshow = () => {
   return (
+    <div className="slide_div">
     <div className="slide-container">
       <Slide>
         <div className="each-slide">
@@ -114,20 +121,24 @@ const Slideshow = () => {
         <div className="each-slide">
           <div style={{ backgroundImage: `url(${slideImages[19]})` }}></div>
         </div>
+        
       </Slide>
     </div>
+    </div>
+   
   );
 };
 
 export default function HomePage() {
   return (
-    <div >
-   <div className="title">
-   <img src={mainImage} alt="MainImage" />
+    <div className="main">
+   <div className="border_div">
+   <img src={mainImage} alt="MainImage" className="title" />
    </div>
 
-   <div className="grid">
-        <div >
+    <div className="center">
+   <div className="awards">
+        <div>
           <img src={batchImage} alt="Award1" />
         </div>
         <div>
@@ -136,16 +147,19 @@ export default function HomePage() {
        <div>
           <img src={tripAdvisor} alt="Award3" />
         </div>
+        
         </div>
-    
+        </div>
+    <div>
       <h4>
         Our tropical decorated guest house is located in a typical Amsterdam
         canal (town) house erected in the 18th century. Like our old house in
         Droogbak, built around 1777.
       </h4>
-      <div className="grid2">
+      </div>
+      <div className="slideshow_grid">
       <div>
-      <p >
+      <p>
         After running our B&B more than 18 years, on June 8 we moved to our new
         Mansion at HERENSTRAAT 26. Just couple of minutes away from the old
         location and around 10 minutes away to Amsterdam Centraal Station.
@@ -168,8 +182,14 @@ export default function HomePage() {
         our guests, we cannot thank you enough.
       </p>
       </div>
+      <div>
+      <Slideshow />
       </div>
-      {Slideshow()}
+       
+      </div>
+      {/* {Slideshow()} */}
+      
+      
 
     </div>
   );
