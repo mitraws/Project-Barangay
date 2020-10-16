@@ -19,14 +19,28 @@ h4 {
     opacity: 0.9;
 }
 
-p,
-footer {
+h5 {
+    font-size: 1;
+    font-family: "Antic Didone", "system-ui", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+p {
     font-size: 1.3125rem;
     line-height: 1.75rem;
-    font-family: "Nunito Sans", sans-serif
+    font-family: "Nunito Sans", sans-serif;
+    padding-top: 10px;
 }
 
 body {
     background: linear-gradient( to left, #ffffff 50%, rgba(230, 237, 238, 0.377) 50%);
     opacity: 0.8;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 20px;
+    /* border: 2px solid black; */
 }

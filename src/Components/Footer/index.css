@@ -1,53 +1,54 @@
 footer {
-    background-color: rgba(158, 176, 179, 0.377);
-    position: relative;
-    color: whitesmoke;
-    font-size: 1.3125rem;
-    line-height: 1.75rem;
-    font-family: "Antic Didone", "system-ui", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: rgba(158, 176, 179, 0.377);
+  position: relative;
+  color: whitesmoke;
+  line-height: 1.75rem;
+  font-family: "Antic Didone", "system-ui", "Segoe UI", "Roboto", "Helvetica",
+    "Arial", sans-serif;
+  margin-top: 10px;
 }
 
 .footerGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-    grid-gap: 50px;
-    padding-top: 50px;
-    padding-left: 300px;
-    grid-column-gap: 32px;
-    /* background: yellow; */
-    position: relative;
-    color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  justify-content: space-evenly;
+  /* grid-gap: 50px; */
+  /* padding-top: 50px; */
+  /* padding-left: 300px; */
+  /* grid-column-gap: 32px; */
+  /* background: yellow; */
+  /* position: relative; */
+  color: black;
 }
 
 .underline {
-    display: block;
-    position: relative;
-    overflow: hidden;
+  display: block;
+  position: relative;
+  overflow: hidden;
 }
 
 .underline:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    right: 0;
-    width: 0;
-    bottom: -5px;
-    background: black;
-    height: 4px;
-    transition-property: width;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: black;
+  height: 4px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
 }
 
 .underline:hover:after,
 .underline:focus:before,
 .underline:active:after {
-    left: 0;
-    right: auto;
-    width: 100%;
+  left: 0;
+  right: auto;
+  width: 100%;
 }
-
 
 /* p.left {
     display: block;

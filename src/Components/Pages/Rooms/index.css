@@ -62,14 +62,6 @@
         border: 1px solid black;
     }
     
-    .grid2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-evenly;
-        padding: 20px;
-        /* border: 2px solid black; */
-    }
-    
     .reservation {
         padding: 20px;
         padding-bottom: 50px;
@@ -148,8 +140,8 @@
     }
     
     .amenities {
-        padding-left: 200px;
-        padding-right: 200px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
     
     body {
