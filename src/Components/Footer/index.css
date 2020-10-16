@@ -10,8 +10,11 @@ footer {
 .footerGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-evenly;
-    padding: 20px;
+    justify-content: space-between;
+    grid-gap: 50px;
+    padding-top: 50px;
+    padding-left: 300px;
+    grid-column-gap: 32px;
     /* background: yellow; */
     position: relative;
     color: black;
@@ -45,7 +48,8 @@ footer {
     width: 100%;
 }
 
-p.left {
+
+/* p.left {
     display: block;
     position: relative;
     overflow: hidden;
@@ -66,4 +70,4 @@ p.left:before {
 p.left:hover:before {
     visibility: visible;
     width: 100%;
-}
+} */
