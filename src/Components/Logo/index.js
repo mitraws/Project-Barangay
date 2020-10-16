@@ -3,8 +3,10 @@ import "./index.css";
 
 export default function index() {
   return (
-    <div>
-      <img alt="logo" src={require("../../Images/logo.png")} />
+    <div className="main_div">
+    <div className="logo_div">
+      <img  className="logo_img" alt="logo" src={require("../../Images/logo.png")} />
+    </div>
     </div>
   );
 }

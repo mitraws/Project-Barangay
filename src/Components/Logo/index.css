@@ -1,4 +1,15 @@
-img {
-  width: 200px;
-  height: 100px;
+.logo_img {
+    padding-top: 10px;
+    width: 200px;
+    height: 60px;
+    border: 1px solid black;
+}
+
+.logo_div {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.main_div {
+    padding-left: 10px;
 }
