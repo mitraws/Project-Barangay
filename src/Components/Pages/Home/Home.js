@@ -26,7 +26,7 @@ import slide14 from "../../../Images/IMG_0404.jpg";
 import slide15 from "../../../Images/IMG_0405.jpg";
 import slide16 from "../../../Images/IMG_1205.jpg";
 import slide17 from "../../../Images/IMG_1810.jpg";
-//import slide18 from "../../../Images/IMG_6556.jpg";
+import slide18 from "../../../Images/IMG_6556.jpg";
 import slide19 from "../../../Images/IMG_9333.jpg";
 import slide20 from "../../../Images/IMG_9674.jpg";
 
@@ -49,7 +49,7 @@ const slideImages = [
   slide15,
   slide16,
   slide17,
-  //slide18,
+  slide18,
   slide19,
   slide20,
 ];
@@ -151,7 +151,7 @@ export default function HomePage() {
         </div>
         </div>
     <div>
-      <h4>
+      <h4 className="intro">
         Our tropical decorated guest house is located in a typical Amsterdam
         canal (town) house erected in the 18th century. Like our old house in
         Droogbak, built around 1777.
