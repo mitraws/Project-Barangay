@@ -2,6 +2,7 @@ import React from "react";
 //import { motion } from "framer-motion";
 import "./index.css";
 import "../../../App.css";
+import Button from "../../Button"
 
 export default function index() {
   return (
@@ -23,7 +24,11 @@ export default function index() {
           </div> */}
         </header>
       </div>
+      <div className="reservation">
+        <Button name="Make a Reservation"/>   
+      </div>
 
+<div className="outer_div">
       <div className='grid'>
         <div>
           <img
@@ -60,17 +65,20 @@ export default function index() {
           />
         </div>
       </div>
+      </div>
 
       <div>
         <h4>Amenites</h4>
-        <div>
+        <div className="amenities">
           <div className='wrap'>
             <p className='inner_p'>Free Hi-Speed WIFI </p>
+            <span>♢</span>
             <p className='inner_p'>
               Comfortable Queen size bed or 2 single beds
-            </p>
+            </p><span>♢</span>
+            <p className='inner_p'> Shower gel and shampoo </p>
 
-            <p className='inner_p'> Cable T.V</p>
+            {/* <p className='inner_p'> Cable T.V</p> */}
           </div>
           <div className='wrap'>
             <p className='inner_p'>
@@ -78,24 +86,26 @@ export default function index() {
               Bath tub
             </p>
 
-            <p className='inner_p'> Shower gel and shampoo </p>
+            {/* <p className='inner_p'>Hair Dryer  </p> */}
           </div>
           <div className='wrap'>
-            <p className='inner_p'>Welcome basket with wine and snacks </p>
-            <p className='inner_p'>Complimentary quality coffee and tea </p>
+            <p className='inner_p'>Welcome basket with wine and snacks </p><span>♢</span>
+            <p className='inner_p'>Complimentary quality coffee and tea </p><span>♢</span>
             <p className='inner_p'> Small table and 2 chairs</p>
           </div>
           <div className='wrap'>
-            <p className='inner_p'> Breakfast in bed, served in the room</p>
+            <p className='inner_p'> Breakfast in bed, served in the room</p><span>♢</span>
 
-            <p className='inner_p'> No noise / quiet Small fridge</p>
+            <p className='inner_p'> No noise / quiet Small fridge</p><span>♢</span>
             <p className='inner_p'> Iron and board </p>
           </div>{" "}
           <div className='wrap'>
             <p className='inner_p'>
               Aircon - Climate control with air filters{" "}
-            </p>
-            <p className='inner_p'> Hair Dryer </p>
+            </p><span>♢</span>
+            <p className='inner_p'> Cable T.V</p><span>♢</span>
+            <p className='inner_p'>Hair Dryer  </p> <span>♢</span>
+            {/* <p className='inner_p'> Shower gel and shampoo </p> */}
             <p className='inner_p'> Daily cleaning service </p>
           </div>
         </div>
@@ -104,24 +114,28 @@ export default function index() {
         <div>
           <h4>Policies</h4>
           <p>
-            Our conditions and cancellation policy. (The applied amounts /
-            percentages are to be paid by the guest.) If you cancel you
-            reservation: Less than 7 days before date of arrival & NO SHOW: 100%
-            of total amount. More than 7 days before arrival date:25 euro
-            administration fee. We only accept bookings with valid credit/ debit
+            <b>Our conditions and cancellation policy.</b> <br></br>(The applied amounts /
+            percentages are to be paid by the guest.)</p>
+           <p> <b>If you cancel your reservation: </b></p>
+           <p> <ul>
+            <li>Less than 7 days before date of arrival & NO SHOW: 100%
+            of total amount.</li> <li>More than 7 days before arrival date:25 euro
+            administration fee.</li> </ul></p>
+            
+            <p>We only accept bookings with valid credit/ debit
             card details. Your card will be charged 1 week before check-in. If
             you prefer to pay cash, we will reverse the card charge. We are a
             non smoking B&B Our house is not suitable for babies and children
             under 8 years old. Give us your arrival time 48 hours before
-            check-in.
-          </p>
+            check-in.</p>
+          
         </div>
         <div>
           <h4>Breakfast in bed</h4>
           <p>
             We serve our “world famous breakfast” in the rooms between 09.00 and
-            11.00 hours, If you prefer an early breakfast we serve a full
-            continental breakfast the night before. Every morning we serve a
+            11.00 hours,</p><p> If you prefer an early breakfast we serve a full
+            continental breakfast the night before.</p> <p>Every morning we serve a
             different breakfast. Especial breakfast options: Continental,
             Vegetarian, Vegan , Gluten free. (inform us)
           </p>
