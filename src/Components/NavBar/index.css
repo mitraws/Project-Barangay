@@ -1,16 +1,22 @@
-.navigation_bar > a {
-  /* line-height: 5; */
-  padding-top: 5px;
-  font-weight: normal;
-  color: #2b3a44;
-  text-decoration: none;
-
-  /* font-family: "Nunito Sans", sans-serif; */
+@import url("https://fonts.googleapis.com/css?family=Antic+Didone%7CNunito+Sans:400,700&amp;display=swap");
+.navigation_bar>a {
+    /* padding-top: 5px; */
+    font-weight: normal;
+    color: #2b3a44;
+    text-decoration: none;
+    font-family: "Antic Didone", "system-ui", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    line-height: 1rem;
+    /* margin-bottom: 1.5rem; */
+    font-family: "Antic Didone", "system-ui", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif;
+    opacity: 0.9;
 }
 
 .navigation_bar {
-  padding-top: 25px;
-  line-height: 4;
-  display: flex;
-  justify-content: space-evenly;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: white;
 }

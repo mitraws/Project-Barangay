@@ -20,7 +20,7 @@ export default function index() {
       {"   "}
       <NavLink to="/contact">Contact</NavLink>
 
-      <Button />
+      <Button name="Book Now" />
     </div>
   );
 }
