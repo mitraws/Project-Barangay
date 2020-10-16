@@ -3,7 +3,7 @@ import "./index.css";
 
 export default function index() {
   return (
-    <div>
+    <div className="outer_footer">
       <div className='footer_color'>
         <footer>
           <div className='footerGrid'>
