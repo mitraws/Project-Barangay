@@ -1,12 +1,13 @@
 import React from "react";
 //import { motion } from "framer-motion";
 import "./index.css";
-import "../../../App.css";
-import Button from "../../Button"
+
+import "../../../Style/style.css";
+
 
 export default function index() {
   return (
-    <div className='main'>
+    <div className="main">
       <div>
         <header>
           <h1>The “Tropical” Rooms</h1>
@@ -28,12 +29,13 @@ export default function index() {
         <Button name="Make a Reservation"/>   
       </div>
 
-<div className="outer_div">
-      <div className='grid'>
+
+      <div className="grid">
+
         <div>
           <img
-            src='http://barangay.nl/images/thumbnail%20(4).jpg?crc=390300741'
-            alt='bedroom'
+            src="http://barangay.nl/images/thumbnail%20(4).jpg?crc=390300741"
+            alt="bedroom"
             // height='50%'
             // width='50%'
           />
@@ -41,8 +43,8 @@ export default function index() {
 
         <div>
           <img
-            src='http://barangay.nl/images/thumbnail%20(1).jpg?crc=238654893'
-            alt='bathroom'
+            src="http://barangay.nl/images/thumbnail%20(1).jpg?crc=238654893"
+            alt="bathroom"
             // height='20%'
             // width='20%'
           />
@@ -50,16 +52,16 @@ export default function index() {
 
         <div>
           <img
-            src='http://barangay.nl/images/thumbnail%20(9).jpg?crc=123493431'
-            alt='TV'
+            src="http://barangay.nl/images/thumbnail%20(9).jpg?crc=123493431"
+            alt="TV"
             // height='10%'
             // width='10%'
           />
         </div>
         <div>
           <img
-            src='http://barangay.nl/images/thumbnail%20(7).jpg?crc=3937410535'
-            alt='tabel and desk'
+            src="http://barangay.nl/images/thumbnail%20(7).jpg?crc=3937410535"
+            alt="tabel and desk"
             // height='20%'
             // width='20%'
           />
@@ -69,19 +71,22 @@ export default function index() {
 
       <div>
         <h4>Amenites</h4>
-        <div className="amenities">
-          <div className='wrap'>
-            <p className='inner_p'>Free Hi-Speed WIFI </p>
-            <span>♢</span>
-            <p className='inner_p'>
+
+        <div>
+          <div className="wrap">
+            <p className="inner_p">Free Hi-Speed WIFI </p>
+            <p className="inner_p">
+
               Comfortable Queen size bed or 2 single beds
             </p><span>♢</span>
             <p className='inner_p'> Shower gel and shampoo </p>
 
-            {/* <p className='inner_p'> Cable T.V</p> */}
+
+            <p className="inner_p"> Cable T.V</p>
+
           </div>
-          <div className='wrap'>
-            <p className='inner_p'>
+          <div className="wrap">
+            <p className="inner_p">
               Modern en-suite Bathroom with bathtub and walk-in Power shower and
               Bath tub
             </p>
@@ -99,18 +104,16 @@ export default function index() {
             <p className='inner_p'> No noise / quiet Small fridge</p><span>♢</span>
             <p className='inner_p'> Iron and board </p>
           </div>{" "}
-          <div className='wrap'>
-            <p className='inner_p'>
+          <div className="wrap">
+            <p className="inner_p">
               Aircon - Climate control with air filters{" "}
-            </p><span>♢</span>
-            <p className='inner_p'> Cable T.V</p><span>♢</span>
-            <p className='inner_p'>Hair Dryer  </p> <span>♢</span>
-            {/* <p className='inner_p'> Shower gel and shampoo </p> */}
-            <p className='inner_p'> Daily cleaning service </p>
+            </p>
+            <p className="inner_p"> Hair Dryer </p>
+            <p className="inner_p"> Daily cleaning service </p>
           </div>
         </div>
       </div>
-      <div className='grid2'>
+      <div className="grid2">
         <div>
           <h4>Policies</h4>
           <p>
@@ -164,7 +167,6 @@ export default function index() {
           </div>
         </footer>
       </div> */}
-
     </div>
   );
 }
