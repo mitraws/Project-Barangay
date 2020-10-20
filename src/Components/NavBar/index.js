@@ -12,13 +12,45 @@ export default function index() {
         <Logo />
       </NavLink>
       {"   "}
-      <NavLink to="/rooms">Rooms</NavLink>
+      <NavLink
+        to="/rooms"
+        activeStyle={{
+          fontWeight: "bold",
+          // color: "blue",
+        }}
+      >
+        Rooms
+      </NavLink>
       {"   "}
-      <NavLink to="/goodtoknow">Good to know</NavLink>
+      <NavLink
+        to="/goodtoknow"
+        activeStyle={{
+          fontWeight: "bold",
+          // color: "blue",
+        }}
+      >
+        Good to know
+      </NavLink>
       {"   "}
-      <NavLink to="/aboutus">About Us</NavLink>
+      <NavLink
+        to="/aboutus"
+        activeStyle={{
+          fontWeight: "bold",
+          // color: "blue",
+        }}
+      >
+        About Us
+      </NavLink>
       {"   "}
-      <NavLink to="/contact">Contact</NavLink>
+      <NavLink
+        to="/contact"
+        activeStyle={{
+          fontWeight: "bold",
+          // color: "blue",
+        }}
+      >
+        Contact
+      </NavLink>
 
       <Button name="Book Now" />
     </div>
