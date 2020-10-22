@@ -1,8 +1,6 @@
 import React from "react";
 //import { motion } from "framer-motion";
 import "./index.css";
-
-import "../../../App.css";
 import Button from "../../Button";
 
 export default function index() {

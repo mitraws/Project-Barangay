@@ -1,6 +1,5 @@
 import React from "react";
 import "./HomePage.css";
-import "../../../App.css";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
 
