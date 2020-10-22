@@ -16,7 +16,6 @@ export default function index() {
         to="/rooms"
         activeStyle={{
           fontWeight: "bold",
-          // color: "blue",
         }}
       >
         Rooms
@@ -26,7 +25,6 @@ export default function index() {
         to="/goodtoknow"
         activeStyle={{
           fontWeight: "bold",
-          // color: "blue",
         }}
       >
         Good to know
@@ -36,7 +34,6 @@ export default function index() {
         to="/aboutus"
         activeStyle={{
           fontWeight: "bold",
-          // color: "blue",
         }}
       >
         About Us
@@ -46,7 +43,6 @@ export default function index() {
         to="/contact"
         activeStyle={{
           fontWeight: "bold",
-          // color: "blue",
         }}
       >
         Contact
