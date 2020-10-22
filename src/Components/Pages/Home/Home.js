@@ -25,7 +25,7 @@ import slide14 from "../../../Images/IMG_0404.jpg";
 import slide15 from "../../../Images/IMG_0405.jpg";
 import slide16 from "../../../Images/IMG_1205.jpg";
 import slide17 from "../../../Images/IMG_1810.jpg";
-import slide18 from "../../../../Images/IMG_6556.jpg";
+import slide18 from "../../../Images/IMG_6556.jpg";
 import slide19 from "../../../Images/IMG_9333.jpg";
 import slide20 from "../../../Images/IMG_9674.jpg";
 
