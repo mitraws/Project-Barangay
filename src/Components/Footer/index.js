@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./index.css";
 
 export default function index() {
@@ -14,10 +15,18 @@ export default function index() {
               <h5>The Netherlands</h5>
             </div>
             <div>
-              <h5>Rooms</h5>
-              <h5>Good To Know</h5>
-              <h5>About Us</h5>
-              <h5>Contact</h5>
+              <h5>
+                <NavLink to="/rooms">Rooms</NavLink>
+              </h5>
+              <h5>
+                <NavLink to="/goodtoknow">Good to know</NavLink>
+              </h5>
+              <h5>
+                <NavLink to="/aboutus">About Us</NavLink>
+              </h5>
+              <h5>
+                <NavLink to="/contact">Contact</NavLink>
+              </h5>
             </div>
             <div>
               <h5>Email: rooms@barangay.nl</h5>
