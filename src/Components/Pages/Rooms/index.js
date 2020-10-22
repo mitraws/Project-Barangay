@@ -1,12 +1,13 @@
 import React from "react";
 //import { motion } from "framer-motion";
 import "./index.css";
+
 import "../../../App.css";
-import Button from "../../Button"
+import Button from "../../Button";
 
 export default function index() {
   return (
-    <div className='main'>
+    <div className="main">
       <div>
         <header>
           <h1>The “Tropical” Rooms</h1>
@@ -25,119 +26,147 @@ export default function index() {
         </header>
       </div>
       <div className="reservation">
-        <Button name="Make a Reservation"/>   
+        <Button name="Make a Reservation" />
       </div>
 
-<div className="outer_div">
-      <div className='grid'>
-        <div>
-          <img
-            src='http://barangay.nl/images/thumbnail%20(4).jpg?crc=390300741'
-            alt='bedroom'
-            // height='50%'
-            // width='50%'
-          />
-        </div>
+      {/* <div className="grid"> */}
 
-        <div>
-          <img
-            src='http://barangay.nl/images/thumbnail%20(1).jpg?crc=238654893'
-            alt='bathroom'
-            // height='20%'
-            // width='20%'
-          />
-        </div>
+      <div className="outer_div">
+        <div className="grid">
+          <div>
+            <img
+              src="http://barangay.nl/images/thumbnail%20(4).jpg?crc=390300741"
+              alt="bedroom"
+              // height='50%'
+              // width='50%'
+            />
+          </div>
 
-        <div>
-          <img
-            src='http://barangay.nl/images/thumbnail%20(9).jpg?crc=123493431'
-            alt='TV'
-            // height='10%'
-            // width='10%'
-          />
+          <div>
+            <img
+              src="http://barangay.nl/images/thumbnail%20(1).jpg?crc=238654893"
+              alt="bathroom"
+              // height='20%'
+              // width='20%'
+            />
+          </div>
+
+          <div>
+            <img
+              src="http://barangay.nl/images/thumbnail%20(9).jpg?crc=123493431"
+              alt="TV"
+              // height='10%'
+              // width='10%'
+            />
+          </div>
+          <div>
+            <img
+              src="http://barangay.nl/images/thumbnail%20(7).jpg?crc=3937410535"
+              alt="tabel and desk"
+              // height='20%'
+              // width='20%'
+            />
+          </div>
         </div>
-        <div>
-          <img
-            src='http://barangay.nl/images/thumbnail%20(7).jpg?crc=3937410535'
-            alt='tabel and desk'
-            // height='20%'
-            // width='20%'
-          />
-        </div>
-      </div>
       </div>
 
       <div>
         <h4>Amenites</h4>
+
         <div className="amenities">
-          <div className='wrap'>
-            <p className='inner_p'>Free Hi-Speed WIFI </p>
+          <div className="wrap">
+            <p className="inner_p">Free Hi-Speed WIFI </p>
             <span>♢</span>
-            <p className='inner_p'>
+            <p className="inner_p">
               Comfortable Queen size bed or 2 single beds
-            </p><span>♢</span>
-            <p className='inner_p'> Shower gel and shampoo </p>
+            </p>
+            <span>♢</span>
+            <p className="inner_p"> Shower gel and shampoo </p>
 
             {/* <p className='inner_p'> Cable T.V</p> */}
           </div>
-          <div className='wrap'>
-            <p className='inner_p'>
+          <div className="wrap">
+            <p className="inner_p">
               Modern en-suite Bathroom with bathtub and walk-in Power shower and
               Bath tub
             </p>
 
             {/* <p className='inner_p'>Hair Dryer  </p> */}
           </div>
-          <div className='wrap'>
-            <p className='inner_p'>Welcome basket with wine and snacks </p><span>♢</span>
-            <p className='inner_p'>Complimentary quality coffee and tea </p><span>♢</span>
-            <p className='inner_p'> Small table and 2 chairs</p>
+          <div className="wrap">
+            <p className="inner_p">Welcome basket with wine and snacks </p>
+            <span>♢</span>
+            <p className="inner_p">Complimentary quality coffee and tea </p>
+            <span>♢</span>
+            <p className="inner_p"> Small table and 2 chairs</p>
           </div>
-          <div className='wrap'>
-            <p className='inner_p'> Breakfast in bed, served in the room</p><span>♢</span>
+          <div className="wrap">
+            <p className="inner_p"> Breakfast in bed, served in the room</p>
+            <span>♢</span>
 
-            <p className='inner_p'> No noise / quiet Small fridge</p><span>♢</span>
-            <p className='inner_p'> Iron and board </p>
+            <p className="inner_p"> No noise / quiet Small fridge</p>
+            <span>♢</span>
+            <p className="inner_p"> Iron and board </p>
           </div>{" "}
-          <div className='wrap'>
-            <p className='inner_p'>
+          <div className="wrap">
+            <p className="inner_p">
               Aircon - Climate control with air filters{" "}
-            </p><span>♢</span>
-            <p className='inner_p'> Cable T.V</p><span>♢</span>
-            <p className='inner_p'>Hair Dryer  </p> <span>♢</span>
+            </p>
+            <span>♢</span>
+            <p className="inner_p"> Cable T.V</p>
+            <span>♢</span>
+            <p className="inner_p">Hair Dryer </p> <span>♢</span>
             {/* <p className='inner_p'> Shower gel and shampoo </p> */}
-            <p className='inner_p'> Daily cleaning service </p>
+            <p className="inner_p"> Daily cleaning service </p>
           </div>
         </div>
       </div>
-      <div className='grid2'>
+      <div className="grid2">
         <div>
           <h4>Policies</h4>
           <p>
-            <b>Our conditions and cancellation policy.</b> <br></br>(The applied amounts /
-            percentages are to be paid by the guest.)</p>
-           <p> <b>If you cancel your reservation: </b></p>
-           <p> <ul>
-            <li>Less than 7 days before date of arrival & NO SHOW: 100%
-            of total amount.</li> <li>More than 7 days before arrival date:25 euro
-            administration fee.</li> </ul></p>
-            
-            <p>We only accept bookings with valid credit/ debit
-            card details. Your card will be charged 1 week before check-in. If
-            you prefer to pay cash, we will reverse the card charge. We are a
-            non smoking B&B Our house is not suitable for babies and children
-            under 8 years old. Give us your arrival time 48 hours before
-            check-in.</p>
-          
+            <b>Our conditions and cancellation policy.</b> <br></br>(The applied
+            amounts / percentages are to be paid by the guest.)
+          </p>
+          <p>
+            {" "}
+            <b>If you cancel your reservation: </b>
+          </p>
+          <p>
+            {" "}
+            <ul>
+              <li>
+                Less than 7 days before date of arrival & NO SHOW: 100% of total
+                amount.
+              </li>{" "}
+              <li>
+                More than 7 days before arrival date:25 euro administration fee.
+              </li>{" "}
+            </ul>
+          </p>
+
+          <p>
+            We only accept bookings with valid credit/ debit card details. Your
+            card will be charged 1 week before check-in. If you prefer to pay
+            cash, we will reverse the card charge. We are a non smoking B&B Our
+            house is not suitable for babies and children under 8 years old.
+            Give us your arrival time 48 hours before check-in.
+          </p>
         </div>
         <div>
           <h4>Breakfast in bed</h4>
           <p>
             We serve our “world famous breakfast” in the rooms between 09.00 and
-            11.00 hours,</p><p> If you prefer an early breakfast we serve a full
-            continental breakfast the night before.</p> <p>Every morning we serve a
-            different breakfast. Especial breakfast options: Continental,
-            Vegetarian, Vegan , Gluten free. (inform us)
+            11.00 hours,
+          </p>
+          <p>
+            {" "}
+            If you prefer an early breakfast we serve a full continental
+            breakfast the night before.
+          </p>{" "}
+          <p>
+            Every morning we serve a different breakfast. Especial breakfast
+            options: Continental, Vegetarian, Vegan , Gluten free. (inform us)
           </p>
         </div>
       </div>
@@ -164,7 +193,6 @@ export default function index() {
           </div>
         </footer>
       </div> */}
-
     </div>
   );
 }
