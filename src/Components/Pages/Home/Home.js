@@ -1,5 +1,6 @@
 import React from "react";
 import "./HomePage.css";
+import "../../../App.css";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
 
@@ -7,17 +8,36 @@ import mainImage from "../../../Images/IMG_0318.jpg";
 import batchImage from "../../../Images/batchexcellent2.jpg";
 import awardImage from "../../../Images/hotelCombined2.jpg";
 import tripAdvisor from "../../../Images/ta2017.jpg";
-import {slideImages} from "../../../Images";
+import { slideImages } from "../../../Images";
 
+const properties = {
+      duration: 5000,
+      autoplay: true,
+      transitionDuration: 500,
+      arrows: false,
+      infinite: true,
+      easing: "ease",
+      indicators: (i) => (
+        <div className="indicator">
+          <img className="test" src={slideImages[i]} alt="sample" />
+        </div>
+      )
+    };
 
 const Slideshow = () => {
   return (
-    <div className="slide_div">
-      <div className="slide-container">
-        <Slide>
+    <div className='slide_div'>
+      <div className='slide-container'>
+        <Slide {...properties}>
           {slideImages.map((slide) => (
-            <div className="each-slide">
-              <div style={{ backgroundImage: `url(${slide})` }}></div>
+            <div className='each-slide'>
+              
+              <div  style={{ 
+              backgroundRepeat: 'no-repeat', 
+              backgroundPosition:"center", 
+            backgroundSize: "100% 100%", // or background-size:100% 60vh;(can be used)
+              
+              backgroundImage: `url(${slide})`}}></div>
             </div>
           ))}
         </Slide>
@@ -26,34 +46,35 @@ const Slideshow = () => {
   );
 };
 
-export default function HomePage() {
+export default function Index() {
+  
   return (
-    <div className="main">
-      <div className="border_div">
-        <img src={mainImage} alt="MainImage" className="title" />
+    <div className='main'>
+      <div className='border_div'>
+        <img src={mainImage} alt='MainImage' className='title' />
       </div>
 
-      <div className="center">
-        <div className="awards">
+      <div className='center'>
+        <div className='awards'>
           <div>
-            <img src={batchImage} alt="Award1" />
+            <img src={batchImage} alt='Award1' />
           </div>
           <div>
-            <img src={awardImage} alt="Award2" />
+            <img src={awardImage} alt='Award2' />
           </div>
           <div>
-            <img src={tripAdvisor} alt="Award3" />
+            <img src={tripAdvisor} alt='Award3' />
           </div>
         </div>
       </div>
       <div>
-        <h4 className="intro">
+        <h4 className='intro'>
           Our tropical decorated guest house is located in a typical Amsterdam
           canal (town) house erected in the 18th century. Like our old house in
           Droogbak, built around 1777.
         </h4>
       </div>
-      <div className="slideshow_grid">
+      <div className='slideshow_grid'>
         <div>
           <p>
             After running our B&B more than 18 years, on June 8 we moved to our
@@ -80,12 +101,14 @@ export default function HomePage() {
           </p>
         </div>
         <div>
+          
           <Slideshow />
         </div>
       </div>
-      <div className="awards">
-        <div>
-          <b className="review">Shan Courtat ⭐⭐⭐⭐⭐</b>
+      <div className="review_div">
+      <div className='awards'>
+        <div >
+          <b className='review'>Shan Courtat ⭐⭐⭐⭐⭐</b>
           <p>
             {" "}
             Stayed for 3 nights and it was one of the best trip I've ever had
@@ -98,8 +121,8 @@ export default function HomePage() {
             easily.
           </p>
         </div>
-        <div>
-          <b className="review">Thiago Nouer ⭐⭐⭐⭐⭐</b>
+        <div >
+          <b className='review'>Thiago Nouer ⭐⭐⭐⭐⭐</b>
           <p>
             I actually stayed here a year ago and forgot to write a review when
             I left and generally I don’t write reviews at all, but I remember
@@ -113,7 +136,7 @@ export default function HomePage() {
           </p>
         </div>
         <div>
-          <b className="review">Gian Domenico Aresu ⭐⭐⭐⭐⭐</b>
+          <b className='review'>Gian Domenico Aresu ⭐⭐⭐⭐⭐</b>
           <p>
             {" "}
             B&B delizioso, curato nei minimi particolari e molto pulito. Ottima
@@ -123,6 +146,7 @@ export default function HomePage() {
             tutto Gianpaolo e Domenico
           </p>
         </div>
+      </div>
       </div>
     </div>
   );
