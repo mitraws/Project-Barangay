@@ -6,8 +6,7 @@ import "./index.css";
 
 export default function index() {
   return (
-    <div className="navigation_bar">
-      {/* <Logo /> */}
+    <nav className="navigation_bar">
       <NavLink to="/">
         <Logo />
       </NavLink>
@@ -49,6 +48,6 @@ export default function index() {
       </NavLink>
 
       <Button name="Book Now" />
-    </div>
+    </nav>
   );
 }

@@ -1,5 +1,4 @@
 import React from "react";
-//import { motion } from "framer-motion";
 import "./index.css";
 import Button from "../../Button";
 
@@ -18,25 +17,17 @@ export default function index() {
             monumental houses in Amsterdam, we have steep narrow stairs, the B&B
             is not suitable to those physically challenged.
           </p>
-          {/* <div>
-            <button className='contact-right'>Make a Reservation </button>
-          </div> */}
         </header>
       </div>
       <div className="reservation">
         <Button name="Make a Reservation" />
       </div>
-
-      {/* <div className="grid"> */}
-
       <div className="outer_div">
         <div className="grid">
           <div>
             <img
               src="http://barangay.nl/images/thumbnail%20(4).jpg?crc=390300741"
               alt="bedroom"
-              // height='50%'
-              // width='50%'
             />
           </div>
 
@@ -44,8 +35,6 @@ export default function index() {
             <img
               src="http://barangay.nl/images/thumbnail%20(1).jpg?crc=238654893"
               alt="bathroom"
-              // height='20%'
-              // width='20%'
             />
           </div>
 
@@ -53,16 +42,12 @@ export default function index() {
             <img
               src="http://barangay.nl/images/thumbnail%20(9).jpg?crc=123493431"
               alt="TV"
-              // height='10%'
-              // width='10%'
             />
           </div>
           <div>
             <img
               src="http://barangay.nl/images/thumbnail%20(7).jpg?crc=3937410535"
               alt="tabel and desk"
-              // height='20%'
-              // width='20%'
             />
           </div>
         </div>
@@ -80,16 +65,12 @@ export default function index() {
             </p>
             <span>♢</span>
             <p className="inner_p"> Shower gel and shampoo </p>
-
-            {/* <p className='inner_p'> Cable T.V</p> */}
           </div>
           <div className="wrap">
             <p className="inner_p">
               Modern en-suite Bathroom with bathtub and walk-in Power shower and
               Bath tub
             </p>
-
-            {/* <p className='inner_p'>Hair Dryer  </p> */}
           </div>
           <div className="wrap">
             <p className="inner_p">Welcome basket with wine and snacks </p>
@@ -114,7 +95,6 @@ export default function index() {
             <p className="inner_p"> Cable T.V</p>
             <span>♢</span>
             <p className="inner_p">Hair Dryer </p> <span>♢</span>
-            {/* <p className='inner_p'> Shower gel and shampoo </p> */}
             <p className="inner_p"> Daily cleaning service </p>
           </div>
         </div>
@@ -168,29 +148,6 @@ export default function index() {
           </p>
         </div>
       </div>
-      {/* <div className='footer_color'>
-        <footer>
-          <div className='footerGrid'>
-            <div>
-              <p>Barangay B&B </p>
-              <p>Wimmo & Godwin</p>{" "}
-              <p>
-                Herenstraat 26<p> 1015CB, Amsterdam </p>The Netherlands
-              </p>
-            </div>
-            <div>
-              <p className='underline'>Rooms</p>
-              <p>Good To Know</p>
-              <p>About Us</p>
-              <p>Contact</p>
-            </div>
-            <div>
-              <p>Email: rooms@barangay.nl</p>
-              <p>Telephone: +31 (0) 62504 5432</p>
-            </div>
-          </div>
-        </footer>
-      </div> */}
     </div>
   );
 }
