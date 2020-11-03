@@ -1,15 +1,17 @@
-.logo_img {
+/* .logo_img {
     padding-top: 10px;
-    width: 200px;
-    height: 60px;
+    width: 10%;
+    height: auto;
     border: 1px solid black;
 }
 
 .logo_div {
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid black; 
+    position: relative;
+
 }
 
 .main_div {
     padding-left: 10px;
-}
+} */
