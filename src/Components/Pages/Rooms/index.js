@@ -4,8 +4,8 @@ import Button from "../../Button";
 
 export default function index() {
   return (
-    <div className="main">
-      <div>
+    <>
+      {/* <div> */}
         <header>
           <h1>The “Tropical” Rooms</h1>
           <p>
@@ -18,7 +18,7 @@ export default function index() {
             is not suitable to those physically challenged.
           </p>
         </header>
-      </div>
+      {/* </div> */}
       <div className="reservation">
         <Button name="Make a Reservation" />
       </div>
@@ -148,6 +148,6 @@ export default function index() {
           </p>
         </div>
       </div>
-    </div>
+    </>
   );
 }

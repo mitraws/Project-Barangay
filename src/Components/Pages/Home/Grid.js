@@ -1,5 +1,6 @@
 import React from "react";
 import "./HomePage.css";
+import "../../../App.css";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
 
@@ -9,61 +10,82 @@ import awardImage from "../../../Images/hotelCombined2.jpg";
 import tripAdvisor from "../../../Images/ta2017.jpg";
 import { slideImages } from "../../../Images";
 
-// const Slideshow = () => {
-//   return (
-//     <div className="slide_div">
-//       <div className="slide-container">
-//         <Slide>
-//           {slideImages.map((slide) => (
-//             <div className="each-slide">
-//               <div style={{ backgroundImage: `url(${slide})` }}></div>
-//             </div>
-//           ))}
-//         </Slide>
-//       </div>
-//     </div>
-//   );
-// };
+const slideshowProperties = {
+	duration: 5000,
+	autoplay: true,
+	transitionDuration: 500,
+	arrows: false,
+	infinite: true,
+	easing: "ease",
+	indicators: (i) => (
+		<div className="indicator">
+			<img className="test" src={slideImages[i]} alt="sample" />
+		</div>
+	),
+};
+
+const Slideshow = () => {
+	return (
+		<div className="slide_div">
+			<div className="slide-container">
+				<Slide {...slideshowProperties}>
+					{slideImages.map((slide) => (
+						<div className="each-slide">
+							<div
+								style={{
+									backgroundRepeat: "no-repeat",
+									backgroundPosition: "center",
+									backgroundSize: "100% 100%", // or background-size:100% 60vh;(can be used)
+									backgroundImage: `url(${slide})`,
+								}}
+							></div>
+						</div>
+					))}
+				</Slide>
+			</div>
+		</div>
+	);
+};
 
 export default function GridPage() {
-  return (
-    <div>
-      {/* <div className="main"> */}
-      {/* <div className="home-background"> */}
-      {/* <div className="border_div"> */}
-      {/* <img src={mainImage} alt="MainImage" className="title" /> */}
-      {/* </div> */}
-      {/* </div> */}
-<div className="page-container">
-      <header>
-        <div className="home-background">
-          {/* <h1>Piemonte</h1>
+	return (
+		<>
+			{/* <div className="main"> */}
+			{/* <div className="home-background"> */}
+			{/* <div className="border_div"> */}
+			{/* <img src={mainImage} alt="MainImage" className="title" /> */}
+			{/* </div> */}
+			{/* </div> */}
+			{/* <div className="page-container"> */}
+				<header>
+					<div className="home-background">
+						{/* <h1>Piemonte</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p> */}
-              {/* <img src={mainImage} alt="MainImage" className="photo" /> */}
+						{/* <img src={mainImage} alt="MainImage" className="photo" /> */}
+					</div>
+				</header>
+			{/* </div> */}
 
-        </div>
-      </header>
-      </div>
+			<div className="center">
+				<div className="awards">
+					<div>
+						<img src={batchImage} alt="Award1" />
+					</div>
+					<div>
+						<img src={awardImage} alt="Award2" />
+					</div>
+					<div>
+						<img src={tripAdvisor} alt="Award3" />
+					</div>
+				</div>
+			</div>
 
-      {/* <div className="center">
-        <div className="awards">
-          <div>
-            <img src={batchImage} alt="Award1" />
-          </div>
-          <div>
-            <img src={awardImage} alt="Award2" />
-          </div>
-          <div>
-            <img src={tripAdvisor} alt="Award3" />
-          </div>
-        </div>
-      </div>
-      <div>
+			{/*  <div>
         <h4 className="intro">
           Our tropical decorated guest house is located in a typical Amsterdam
           canal (town) house erected in the 18th century. Like our old house in
@@ -141,6 +163,6 @@ export default function GridPage() {
           </p>
         </div>
       </div> */}
-    </div>
-  );
+		</>
+	);
 }

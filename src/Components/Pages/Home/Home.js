@@ -19,7 +19,7 @@ const properties = {
       easing: "ease",
       indicators: (i) => (
         <div className="indicator">
-          <img className="test" src={slideImages[i]} alt="sample" />
+          <img className="thumbnail" src={slideImages[i]} alt="sample" />
         </div>
       )
     };
@@ -35,7 +35,7 @@ const Slideshow = () => {
               <div  style={{ 
               backgroundRepeat: 'no-repeat', 
               backgroundPosition:"center", 
-            backgroundSize: "100% 100%", // or background-size:100% 60vh;(can be used)
+            backgroundSize: "cover", // or background-size:100% 60vh;(can be used)
               
               backgroundImage: `url(${slide})`}}></div>
             </div>
